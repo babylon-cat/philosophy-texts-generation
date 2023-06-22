@@ -17,7 +17,7 @@
         "optim": "adamw_torch"
     },
     "load_in_8bit": false,
-    "model_name": "D:\\NLP_SLOVO\\MODELS\\ai_forever\\rugpt3small_based_on_gpt2",
+    "model_name": "../rugpt3small_based_on_gpt2",
     "max_size":512,
     "overlap":100,
     "templates_path": "templates.json"
