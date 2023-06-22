@@ -1,0 +1,10 @@
+stages:
+  prepare:
+    cmd: python src/preprocess.py raw_data data
+    deps:
+    - raw_data
+    - data
+    - src/preprocess.py
+    outs:
+    - data/train.jsonl
+    - data/val.jsonl  

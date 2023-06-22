@@ -35,8 +35,12 @@ if __name__ == "__main__":
     random.shuffle(texts)
     default_logger.info(f"Texts count is {len(texts)}")
 
-    train_jsonfile = sys.argv[2] if len(sys.argv)>2 else "train.jsonl"
-    val_jsonfile = sys.argv[2] if len(sys.argv)>2 else "val.jsonl"
+    if len(sys.argv)>2:
+        train_jsonfile = join(sys.argv[2], "train.jsonl")
+        val_jsonfile = join(sys.argv[2], "val.json")
+    else:
+        train_jsonfile = "train.jsonl"
+        val_jsonfile = "val.jsonl"
     
     train_part = 0.8 * len(texts)
     with open(train_jsonfile, encoding='utf-8', mode="w") as w_train, open(val_jsonfile, encoding='utf-8', mode="w") as w_val:
