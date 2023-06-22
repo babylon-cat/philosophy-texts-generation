@@ -1,0 +1,25 @@
+{
+    "trainer": {
+        "evaluation_strategy": "steps",
+        "per_device_train_batch_size": 4,
+        "per_device_eval_batch_size": 4,
+        "gradient_accumulation_steps": 1,
+        "eval_steps": 1000,
+        "save_steps": 1000,
+        "logging_steps": 500,
+        "learning_rate": 0.0003,
+        "num_train_epochs": 2,
+        "lr_scheduler_type": "cosine",
+        "warmup_steps": 0,
+        "fp16": true,
+        "bf16": false,
+        "torch_compile": false,
+        "optim": "adamw_torch"
+    },
+    "load_in_8bit": false,
+    "model_name": "D:\\NLP_SLOVO\\MODELS\\ai_forever\\rugpt3small_based_on_gpt2",
+    "max_size":512,
+    "overlap":100,
+    "templates_path": "templates.json"
+}
+

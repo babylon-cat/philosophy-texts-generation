@@ -1,0 +1,7 @@
+{
+    "description": "Default template for simple text generation",
+    "prompts_input": [
+        "{text}"
+    ],
+    "output_separator": null
+}
