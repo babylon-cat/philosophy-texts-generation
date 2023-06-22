@@ -5,6 +5,3 @@ stages:
     - raw_data
     - data
     - src/preprocess.py
-    outs:
-    - data/train.jsonl
-    - data/val.jsonl  
